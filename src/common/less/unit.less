@@ -1,0 +1,27 @@
+
+// 上下动画切换动画
+// 
+.slide-up-enter-active,
+.slide-up-leave-active,
+.slide-bottom-enter-active,
+.slide-bottom-leave-active {
+  will-change: transform;
+  transition: all 500ms;
+  position: absolute;
+}
+.slide-up-enter {
+  opacity: 0;
+  transform: translate3d(0, -100%, 0);
+}
+.slide-up-leave-active {
+  opacity: 0;
+  transform: translate3d(0, -100%, 0);
+}
+.slide-bottom-enter {
+  // opacity: 0;
+  transform: translate3d(0, 100%, 0);
+}
+.slide-bottom-leave-active {
+  opacity: 0;
+  transform: translate3d(0, 100%, 0);
+}

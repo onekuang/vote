@@ -1,0 +1,67 @@
+@import url("./theme.less");
+@header_height: 0;
+@footer_height: 56px;
+
+
+
+.page {
+	padding-bottom: @footer_height;
+}
+.bg_fff {
+  background: #fff;
+}
+// 不换行
+.ell {
+	text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+// 扩展点击区域
+.extend-click {	
+  position: relative;
+  &:before{  	
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+  }
+}
+.bold{
+  font-weight: bold;
+}
+
+// better-scroll专用
+.ab_full{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.box_wrapper{
+  position: fixed;
+  top: @header_height;
+  left: 0;
+  right: 0;	
+  bottom: @footer_height;
+  overflow: hidden;
+  background: #fff;
+}
+
+// 过度线
+.khr{
+  width: 100%;
+  height:12px;
+  background-color:rgb(244,244,244);
+}
+
+// bs一些class
+.clearfix{clear: both;}
+.pull-left{float: left;}
+.pull-right{float: right;}
+.text-right{text-align: right;}
+

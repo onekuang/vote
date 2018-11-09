@@ -1,0 +1,37 @@
+{
+  "name": "klore_cli",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "test:unit": "vue-cli-service test:unit"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "better-scroll": "^1.13.2",
+    "c-swipe": "^2.1.2",
+    "exif-js": "^2.3.0",
+    "muse-ui": "^3.0.1",
+    "vue": "^2.5.17",
+    "vue-axios": "^2.1.4",
+    "vue-holderjs": "^1.0.2",
+    "vue-router": "^3.0.1",
+    "vue-wechat-title": "^2.0.5",
+    "vuex": "^3.0.1",
+    "wc-messagebox": "^1.10.1",
+    "weixin-js-sdk": "^1.4.0-test"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.0.4",
+    "@vue/cli-plugin-unit-jest": "^3.0.4",
+    "@vue/cli-service": "^3.0.4",
+    "@vue/test-utils": "^1.0.0-beta.20",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-jest": "^23.0.1",
+    "babel-plugin-import": "^1.9.1",
+    "less": "^3.0.4",
+    "less-loader": "^4.1.0",
+    "vue-template-compiler": "^2.5.17"
+  }
+}

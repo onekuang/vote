@@ -1,0 +1,122 @@
+
+
+
+// ===== 主题颜色配置 =====
+
+@color_base 	: #55b4fe;// 基准色
+// @color_base 	: #FC9A01;// 基准色
+
+@color_qian 	: lighten(@color_base, 20%); 					// 浅色
+@color_shen 	: darken(@color_base, 20%);						// 深色
+@color_liang 	: saturate(@color_base, 20%);					// 亮色
+@color_an 	 	: desaturate(@color_base, 20%);				// 暗色
+@color_01 		: mix(@color_base, mediumvioletred); 	// 混合色浅
+@color_02 		: mix(@color_base, lightseagreen); 		// 混合色中
+@color_03 		: mix(@color_base, mintcream); 				// 混合色深
+
+
+// 白配置
+@fff: #fff;
+@fff3: rgba(255, 255, 255, 0.3);
+@fff5: rgba(255, 255, 255, 0.5);
+@fff8: rgba(255, 255, 255, 0.8);
+
+
+
+// 渐变色
+@jianbian:linear-gradient( @color_base, @color_shen);
+@jianbian2:linear-gradient(left, @color_base, @color_shen);
+
+
+
+// ===== 按钮 =====
+
+@btn_bg 	: #0083ea;
+@btn_color: contrast(@btn_bg);
+@btn_hover: lighten(@btn_bg, 20%);
+
+
+
+// 按钮包裹层
+.btn_box{
+  padding: 6px 12px;
+  
+}
+
+// 统一主题默认按钮
+.theme_btn {
+	display: inline-block;
+	text-align: center;
+  border-radius: 6px;
+  width: 100%;
+  font-size: 16px;
+ 	padding-top: 10px;
+ 	padding-bottom: 10px;
+ 	color: #fff;
+ 	.blue_btn();
+}
+// 灰白渐变底色
+.hui_btn {
+	background: linear-gradient(#f5f5f5, #eee);
+	color: #000;
+}
+// 蓝色渐变底色
+.blue_btn {
+  background: linear-gradient( #55b4fe, #0f95ff);
+  color: #fff;
+}
+// 红色渐变底色
+.red_btn {
+	background: linear-gradient( #ff675b,#ea1000 );
+}
+// 橙色渐变底色
+.red_btn {
+	background: linear-gradient( #ffa657,#fb9133,#ff7800 );
+	color: #fff;
+}
+// 绿色渐变底色
+.red_btn {
+	background: linear-gradient( #04BE02,#44B54B );
+	color: #fff;
+}
+// xs普通按钮
+.k_xs_btn {
+	display: inline-block;
+	text-align: center;
+	border-radius: 6px;
+	font-size: 12px;
+	padding: 4px 12px;
+}
+.k_md_btn {
+	display: inline-block;
+	text-align: center;
+	border-radius: 6px;
+	font-size: 14px;
+	padding: 6px 16px;
+}
+
+.k_lg_btn {
+	display: inline-block;
+	text-align: center;
+	border-radius: 6px;
+	font-size: 14px;
+	padding: 10px 16px;
+	width: 100%;
+}
+
+
+//  输入框
+.input_box{
+	padding: 6px;
+	.label{
+		font-size: 12px;
+		color: #999;
+		margin-bottom: 4px;
+		padding-left: 4px;
+	}
+	.k_input1{
+		width: 100%;
+		height: 40px;
+		padding-left: 6px;
+	}
+}
